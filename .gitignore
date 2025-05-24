@@ -58,8 +58,7 @@ cover.html
 .env.local
 .env.*.local
 
-# Application specific
-analyzer
+# Application specific executables (but NOT directories named analyzer)
 analyzer.exe
 analyzer-*
 
