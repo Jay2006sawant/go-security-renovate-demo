@@ -9,8 +9,8 @@
     "dependencies",
     "security"
   ],
-  "assignees": ["@YOUR_USERNAME"],
-  "reviewers": ["@YOUR_USERNAME"],
+  "assignees": ["@Jay2006sawant"],
+   "reviewers": ["@Jay2006sawant"],
   "vulnerabilityAlerts": {
     "enabled": true,
     "description": "Enable vulnerability-based dependency updates"
@@ -46,10 +46,9 @@
   },
   "packageRules": [
     {
-      "description": "Security updates - High priority, auto-merge for patch versions",
+      "description": "Security updates - High priority, auto-merge for patch versions with vulnerabilities",
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["patch"],
-      "hasVulnerabilityAlerts": true,
       "labels": ["security", "auto-merge"],
       "automerge": true,
       "automergeType": "pr",
@@ -60,25 +59,17 @@
       "prPriority": 10
     },
     {
-      "description": "Security updates - High priority for minor/major versions",
+      "description": "Security updates - High priority for minor/major versions with vulnerabilities",
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["minor", "major"],
-      "hasVulnerabilityAlerts": true,
       "labels": ["security", "manual-review"],
       "automerge": false,
       "schedule": ["at any time"],
       "prPriority": 9
     },
     {
-      "description": "Non-security updates - Disabled to focus only on vulnerabilities",
-      "matchPackagePatterns": ["*"],
-      "hasVulnerabilityAlerts": false,
-      "enabled": false
-    },
-    {
       "description": "go-git library - Our vulnerable dependency of focus",
       "matchPackageNames": ["github.com/go-git/go-git/v5"],
-      "hasVulnerabilityAlerts": true,
       "labels": ["go-git", "cve-demo", "critical-security"],
       "prPriority": 15,
       "schedule": ["at any time"],
