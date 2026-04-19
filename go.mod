@@ -5,7 +5,7 @@ go 1.25.0
 require (
 	github.com/fatih/color v1.19.0
 	github.com/go-git/go-git/v5 v5.4.2
-	github.com/spf13/cobra v1.9.1
+	github.com/spf13/cobra v1.10.2
 )
 
 require (
@@ -24,7 +24,7 @@ require (
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/sergi/go-diff v1.1.0 // indirect
-	github.com/spf13/pflag v1.0.6 // indirect
+	github.com/spf13/pflag v1.0.9 // indirect
 	github.com/xanzy/ssh-agent v0.3.0 // indirect
 	golang.org/x/crypto v0.0.0-20210421170649-83a5a9bb288b // indirect
 	golang.org/x/net v0.0.0-20210326060303-6b1517762897 // indirect
