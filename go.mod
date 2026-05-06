@@ -4,7 +4,7 @@ go 1.25.0
 
 require (
 	github.com/fatih/color v1.19.0
-	github.com/go-git/go-git/v5 v5.19.0
+	github.com/go-git/go-git/v6 v6.0.0-alpha.3
 	github.com/go-git/go-git/v6 v6.0.0-alpha.3
 	github.com/spf13/cobra v1.10.2
 )
